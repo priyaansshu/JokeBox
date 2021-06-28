@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="about">                             <!--about-->
+            <button class="close" id="closebutton">
+                <p id="closetext">x</p>
+                <p id="closeemoji">🙅🏻‍♂️</p>
+            </button>
+            <div class="aboutcontainer">
+                <div class="jokeboxheading">
+                    <h1>JokeBox</h1>
+                </div>
+                <div class="jokeboxtagline">
+                    <h2>Jokes On The Go</h2>
+                </div>
+                <div class="ownership">
+                    These jokes have been collected from <a href="https://www.reddit.com/r/Jokes/" target="_blank" id="redditlink">r/jokes.</a>
+                    <br><br>We make no claim on the ownership of these<br>jokes, nor do we take any responsibility for them.
+                </div>
+                <div class="credit">
+                    <a href="https://www.linkedin.com/in/priyanshu-modi-5675941b5/" target="_blank" class="linkedin"> <p id="createdby">Created by </p> <p id="priyanshumodi">Priyanshu Modi</p></a>
+                </div>
+            </div>
+        </div>                                          <!--about-->
+        <div class="joke-box" id="jokebox"> 
+            <div class="topbuttons">
+                <button class="info" id="infobutton">
+                    <p id="infotext">i</p>
+                    <p id="infoemoji">💁🏻‍♂️</p>
+                </button>
+                <button class="darkmode"><img src="sun.png" alt="sun" class="sun"><img src="moon.png" alt="moon" class="moon"> <!--onclick:myFunction()-->
+                <P id="turn">DARK</P>
+                </button> 
+            </div>
+            <div class="joke">
+                        <div id="title">
+                            <br><br>JOKES TO THE RESCUE
+                        </div> 
+                        <p><br></p>
+                        <div id="body">
+                            <!-- let's get started -->
+                        </div>  
+            </div>
+            <div class="mobile">
+                <div class="buttons">
+                    <div class="new_joke">
+                        <button class="btn" id="new-joke"> <!--onclick: getJoke()--> 
+                            <p class="next">NEXT</p>
+                            <p class="plusone">+1</p>
+                        </button>
+                    </div>  <!--new joke-->
+                    
+                    <div class="start">
+                        <button class="btn" id="startbutton" type="button"> <!--onclick: startfunction()--> 
+                            <p class="starttext" id="starttext">START</p>
+                            <img src="rocket.png" alt="rocket" class="rocketimage">
+                            <!-- <p class="start" id="rocket">🚀</p> -->
+                        </button>
+                    </div><!--start-->
+                    
+                    <div class="share">
+                        <button class="btn" id="shareontwitter" type="button"> <!--onclick: sharefunction()--> 
+                            <a href="" target="_blank" id="tweet_joke"> 
+                                <i class="fab fa-twitter"></i>
+                                <p class="tweet">TWEET</p> 
+                                <p class="hashtag">#</p>
+                            </a>
+                        </button>
+                        <!-- </a> -->
+                    </div> <!--share-->
+                </div>  <!--buttons-->
+            </div>  <!--mobiles-->
+        </div>  <!--jokebox-->
+    </div>  <!--container-->
+<script src="popup.js"></script>
+</body>
+</html>
